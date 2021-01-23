@@ -1,0 +1,64 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #cdcdcd #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/eutah_mizushima_unsplash.jpg');
+  min-height: 100%;
+}
+
+/* Copyright background photo */
+.copyrightPhoto {
+    position: absolute;
+    top: 500px;
+    left: 950px;
+    width: 50%;
+    font-family: "Lato", sans-serif;
+    color: #999;
+}
+
+/* Copyright map photograph */
+.copyrightPhoto-map {
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  color: #999;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("images/erika_yi_livingston_newbrunswick.jpg");
+  min-height: 500px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("images/erika_yi_bridge_river.jpg");
+  min-height: 500px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* #contact {
+  padding-left: 200px;
+} */
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
