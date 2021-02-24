@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Erika Yi // Data Analyst + Full Stack Developer</title>
+<title>Erika Yi / Data Analyst + Full Stack Developer</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,11 +9,14 @@
 <link rel="stylesheet" href="decorate.css">
 
 <body>
+    <!-- jquery library  -->
+    <a href="http://jquery.com/"></a>
+    <script src="jquery-3.5.1.js"></script>
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+            <a class="w3-bar-item w3-button w3-hover-red w3-hide-medium w3-hide-large w3-right"
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
@@ -21,61 +24,89 @@
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"> -->
+            <!-- <i class="fa fa-search"></i> -->
             </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navErika" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
         </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-red w3-xlarge w3-wide w3-animate-opacity" class="w3-hide-small">
-                ERIKA YI <img src="images/erika_yi_logo.png" width="150" height="150"> DESIGN</span>
-            <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ERIKA <span class="w3-hide-small">YI</span> DESIGN</span> -->
-            <p><span class="copyrightPhoto">Photo by <a
-                        href="https://unsplash.com/@eutahm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Eutah
-                        Mizushima</a> on <a
-                        href="https://unsplash.com/s/photos/woman-back-asian?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-            </p>
+
+            <!-- Shows on the large screens -->
+            <span class="w3-center w3-padding-large w3-red w3-xlarge w3-wide w3-animate-opacity w3-hide-small">
+                ERIKA YI <img src="images/erika_yi_logo.png" width="150" height="150"> DATA ANALYST
+            </span>
+
+            <!-- Shows on the small screens -->
+            <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity w3-hide-large w3-hide-medium">
+                <img src="images/erika_yi_logo.png" width="150" height="150">
+            </span>
+
         </div>
 
+        <div class="transparent-block w3-display-middle w3-bottom w3-small" style="white-space:nowrap;">
+            <!-- Photo copyright -->
+            <span class="w3-display-bottomright" class="copyrightPhoto">
+                Photo by
+                <a
+                    href="https://unsplash.com/@eutahm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                    Eutah Mizushima
+                </a>
+                on
+                <a
+                    href="https://unsplash.com/s/photos/woman-back-asian?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                    Unsplash
+                </a>
+            </span>
+        </div>
     </div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">ABOUT ME</h3>
         <p class="w3-center"><em>I dream of coding, and then I code my dream.</em></p>
-        <p>
-            Erika is a hard-working Data Analyst with proficiency in front-end and back-end web development. 
-            She earned a certification in Data Science at Rutgers University Data Science & Visualization Bootcamp, 
-            building upon the hours of collaboration with mentors and peers of working with big data sets using Python, Pandas, JavaScript, PostgreSQL, and R. 
-            She is a well-driven problem solver who likes to think outside of the box, collaborating with peers and mentors of working big data sets. 
-            She is also an experienced designer with a Bachelor of Fine Arts in Design. 
-            And she worked as a Graphic Designer at Arc International North America, the world-leading French manufacturer of glassware. 
-
-            She develops mainly B2B and consumer packaging designs and decors for kitchenware and accessories.
+        <p class="bodytext">
+            Erika is a hard-working Data Analyst with proficiency in front-end and back-end web development.
+            She earned a certification in Data Science at Rutgers University Data Science & Visualization Bootcamp,
+            building upon the hours of collaboration with mentors and peers of working with big data sets using Python,
+            Pandas, JavaScript, PostgreSQL, and R.
+            She is a well-driven problem solver who likes to think outside of the box, collaborating with peers and
+            mentors of working big data sets.
+            She is also an experienced designer with a Bachelor of Fine Arts in Design.
+            And she worked as a Graphic Designer at Arc International North America, the world-leading French
+            manufacturer of glassware. She develops mainly B2B and consumer packaging designs and decors for kitchenware
+            and accessories.
         </p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
-                <p><b><i class="fa fa-user w3-margin-right"></i>Hey, this is Erika, and below picture is my dog friend.</b></p><br>
-                <img src="images/my_dog.jpg"
-                    class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500"
-                    height="333">
+                <p><b><i class="fa fa-user w3-margin-right"></i>This is my buddy.</b></p><br>
+                <img src="images/my_dog.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="500" height="333">
             </div>
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p>
-                    Welcome to Erika's portfolio site. 
-                    She is an Asian-American born in Korea but grew up in New Jersey for most of her life with a love of Japanese games and animation series. 
-                    Her hobbies are taking landscape photographs, designing album covers, and creating digital artworks. 
-                    She is bilingual in English and Korean with limited proficiency in Japanese. 
-                    <!-- Her work is mainly about minimalism and organization.  -->
-                    <p>
-                        Fun Facts About Her: 
-                        <li>She has a 14-years-old Yorkshire/Poodle Mixed Dog.</li>
-                        <li>Hip-Hop, Rap, Jazz, and R&B are her favorite music genre.</li>
-                        <li>She is not a fan of desserts and cakes.</li>
-                    </p>
+                <p class="bodytext">
+                    Fun Facts About Erika:
+                <ul class="bodytext">
+                    <li>She is a lover of Japanese games and animation series.</li>
+                    <li>Her hobbies are landscape photographs, designing album covers, and creating digital artworks.
+                    </li>
+                    <li>She live with a 14-years-old Yorkshire/Poodle Mixed Dog.</li>
+                    <li>Hip-Hop, Rap, Jazz, and R&B are her favorite music genre.</li>
+                    <li>She is not a fan of desserts and cakes.</li>
+                    <li>She is bilingual in English and Korean with limited proficiency in Japanese.</li>
+                </ul>
                 </p>
             </div>
         </div>
@@ -147,72 +178,914 @@
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
         <h3 class="w3-center">MY WORK</h3>
-        <p class="w3-center"><em>Here are highlights of my latest Data Analytic work.<br> Click on each image to see details.</em></p><br>
+        <p class="w3-center"><em>Here are highlights of my latest Data Analytic work.<br> Click on each image to see
+                details.</em></p><br>
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
-                <div class="w3-col m3">
-                    <img src="images/icons/earthquake.jpg" style="width:100%" onclick="onClick(this)"
-                        class="w3-hover-opacity" alt="Earthquake">
-                </div>    
-            
+        <div class="w3-row-padding w3-center w3-section">
+
+            <!-- Earthquake Visualization Image Content -->
             <div class="w3-col m3">
-                <img src="images/icons/amazon_review.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Amazon Review">
+                <figure class="img-container">
+                    <!-- <img src="images/icons/earthquake.jpg" style="width:100%" onclick="onClick(this)"
+                                    class="w3-hover-opacity" alt="Earthquake"> -->
+                    <img src="images/icons/earthquake.jpg" style="width:100%"
+                        onclick="document.getElementById('earthquake').style.display='block'" class="w3-hover-opacity"
+                        alt="Earthquake">
+                    <figcaption class="img-content">
+                        <h2 class="title">Earthquake Visualization</h2>
+                        <h3 class="category">Leaflet.js Map</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">Earthquake Visualization</h2>
+                        <h3 class="category">Leaflet.js Map</h3>
+                    </span>
+                </figure>
             </div>
 
-            <div class="w3-col m3">
-                <img src="images/icons/citi_bike_visualization.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Citi Bike Visualization">
+            <!-- Earthquake Visualization Modal Information  -->
+            <div id="earthquake" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-light-green">
+                        <span onclick="document.getElementById('earthquake').style.display='none'"
+                            class="w3-button w3-light-green w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">Earthquake World Map</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container earthquake">
+                        <h3>Introduction</h3>
+                        <p class="bodytext">Welcome to the United States Geological Survey, or USGS for
+                            short! The USGS is
+                            responsible for providing scientific data about natural hazards, the health of
+                            our ecosystems and environment; and the impacts of climate and land-use change.
+                            Their scientists develop new methods and tools to supply timely, relevant, and
+                            useful information about the Earth and its processes. As a new hire, you will be
+                            helping them out with an exciting new project!
+
+                        </p>
+                        <p class="bodytext">The USGS is interested in building a new set of tools that will
+                            allow them
+                            visualize their earthquake data. They collect a massive amount of data from all
+                            over the world each day, but they lack a meaningful way of displaying it. Their
+                            hope is that being able to visualize their data will allow them to better
+                            educate the public and other government organizations (and hopefully secure more
+                            funding..) on issues facing our planet.
+                        </p>
+                    </div>
+
+                    <div id="Visualization" class="w3-container earthquake">
+                        <h3>Visualization of the Earthquake World Map</h3>
+                        <p><img src="images/projects/earthquake/Earthquake Data Visualization-high.gif"
+                                style="width:100%" class="w3-border" alt="Earthquake"></p><br>
+                        <p><img src="images/projects/earthquake/Earthquake and Tectonic Plates Data Visualization-high.gif"
+                                style="width:100%" class="w3-border" alt="Earthquake"></p>
+                    </div>
+
+                    <div id="Video" class="w3-container city">
+                        <p class="bodytext"><strong>Video Links to the Earthquake World Map</strong></p>
+                        <ul class="bodytext">
+                            <li><a href="https://vimeo.com/484947107" title="Github" target="_blank">Earthquakes
+                                    Only</a></li>
+                            <li><a href="https://vimeo.com/484947183" title="Github" target="_blank">Earthquakes
+                                    With Tectonic Plates</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="Github" class="w3-container earthquake">
+                        <p class="bodytext">To Learn More: <strong><a
+                                    href="https://github.com/erikayi/leaflet-challenge.git" title="Github"
+                                    target="_blank">Earthquakes Github Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-light-green w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('earthquake').style.display='none'">Close</button>
+                    </div>
+                </div>
             </div>
 
+            <!-- Amazon Review Image -->
             <div class="w3-col m3">
-                <img src="images/icons/exoplanet_machine_learning.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Exoplanet Machine Learning">
+                <figure class="img-container">
+                    <img src="images/icons/amazon_review.jpg" style="width:100%"
+                        onclick="document.getElementById('amazon').style.display='block'" class="w3-hover-opacity"
+                        alt="Amazon Review">
+                    <figcaption class="img-content">
+                        <h2 class="title">Amazon Review</h2>
+                        <h3 class="category">AWS + PostgreSQL</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">Amazon Review</h2>
+                        <h3 class="category">AWS + PostgreSQL</h3>
+                    </span>
+                </figure>
+            </div>
+
+            <!-- Amazon Review Modal Info -->
+            <div id="amazon" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-orange">
+                        <span onclick="document.getElementById('amazon').style.display='none'"
+                            class="w3-button w3-orange w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">"Hey, Alexa. Let's handle big data."</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container amazon">
+                        <h3>Introduction</h3>
+                        <p class="bodytext">Many of Amazon's shoppers depend on product reviews to make a
+                            purchase. Amazon
+                            makes these datasets publicly available. However, they are quite large and can
+                            exceed the capacity of local machines to handle. One dataset alone contains over
+                            1.5 million rows; with over 40 datasets, this can be quite taxing on the average
+                            local computer. Your first goal for this assignment will be to perform the ETL
+                            process completely in the cloud and upload a DataFrame to an RDS instance. The
+                            second goal will be to use PySpark or SQL to perform a statistical analysis of
+                            selected data.</p>
+                    </div>
+
+                    <div id="Procedure" class="w3-container amazon">
+                        <h3>Procedure of ETL Process</h3>
+                        <ol class="bodytext">
+                            <li>Chosen Amazon Japan Review Dataset and Kitchen Review Dataset.</li>
+                            <li>Import dependencies for both datasets.</li>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_importing_spark.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><strong>Kitchenware Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_download_and_make_spark_application.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><strong>Japan Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_japan_download_and_make_spark_application.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <li>Created DataFrames for each production-ready tables from two big Amazon
+                                customer review datasets.</li>
+                            <p><strong>Japan Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_japan_load_files.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><strong>Kitchenware Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_load_files.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <li>Drop duplicates for each dataset.</li>
+                            <p><strong>Japan Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_japan_drop_duplicates.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><strong>Kitchenware Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_drop_duplicates.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <li>Check the schema for each dataset. Make sure they match with schema created
+                                in PostgreSQL.</li>
+                            <p><strong>Japan Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_japan_check_schema.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><strong>Kitchenware Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_check_schema.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <li>Create dataframe for each schema in datasets. They will be load in
+                                PostgreSQL.</li>
+                            <p><strong>Japan Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_japan_dataframe1.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_japan_dataframe2.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><strong>Kitchenware Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_dataframe1.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_dataframe2.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <li>Load DataFrame to AWS RDS. Connect with PostgreSQL. Deleted endpoints,
+                                database name, username, and password before pushing them to repository for
+                                security purposes.</li>
+                            <p><strong>Japan Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_japan_connect_RDS_load_postgresql.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <p><strong>Kitchenware Amazon Review Dataset</strong></p>
+                            <p><img src="images/projects/amazon_review/amazon_review_kitchen_connect_RDS_load_postgresql.PNG"
+                                    style="width:100%" class="w3-border" alt="Earthquake"></p>
+                            <li>Successfully loaded datasets in pgAdmin using PostgreSQL.</li>
+                            <p><strong>Japan Amazon Review Dataset</strong></p>
+                            <img src="images/projects/amazon_review/amazon_review_pgadmin_products.png"
+                                style="width:36%" class="w3-border" alt="Earthquake">
+                            <img src="images/projects/amazon_review/amazon_review_pgadmin_customers.png"
+                                style="width:44%" class="w3-border" alt="Earthquake">
+                            <img src="images/projects/amazon_review/amazon_review_pgadmin_review_id_table.png"
+                                style="width:45%" class="w3-border" alt="Earthquake">
+                            <img src="images/projects/amazon_review/amazon_review_pgadmin_vine_table.png"
+                                style="width:40%" class="w3-border" alt="Earthquake">
+                            <p><strong>Kitchenware Amazon Review Dataset</strong></p>
+                            <img src="images/projects/amazon_review/kitchen_review_pgadmin_products.PNG"
+                                style="width:45%" class="w3-border" alt="Earthquake">
+                            <img src="images/projects/amazon_review/kitchen_review_pgadmin_customers.PNG"
+                                style="width:44%" class="w3-border" alt="Earthquake">
+                            <img src="images/projects/amazon_review/kitchen_review_pgadmin_review_id_table.PNG"
+                                style="width:45%" class="w3-border" alt="Earthquake">
+                            <img src="images/projects/amazon_review/kitchen_review_pgadmin_vine.PNG" style="width:40%"
+                                class="w3-border" alt="Earthquake">
+                            <li><strong>For the final analysis, answer this question for each dataset:
+                                </strong> From
+                                observing those two datasets, is Amazon's Vine program trustworthy or
+                                not?</li>
+                        </ol>
+                    </div>
+
+                    <div id="Analysis" class="w3-container amazon">
+                        <h3>Analysis of Amazon Japan Review Dataset</h3>
+                        <p><img src="images/projects/amazon_review/amazon_review.PNG" style="width:100%"
+                                class="w3-border" alt="Earthquake"></p><br>
+                    </div>
+
+                    <div id="Kitchen" class="w3-container amazon">
+                        <h3>Analysis of Kitchen Review Dataset</h3>
+                        <p><img src="images/projects/amazon_review/kitchen_review.PNG" style="width:100%"
+                                class="w3-border" alt="Earthquake"></p><br>
+                    </div>
+
+                    <div id="Github" class="w3-container amazon">
+                        <p class="bodytext">To Learn More: <strong><a
+                                    href="https://github.com/erikayi/big-data-challenge.git" title="Github"
+                                    target="_blank">Amazon Project Github Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-orange w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('amazon').style.display='none'">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Citi Bike Visualization Modal Image  -->
+            <div class="w3-col m3">
+                <figure class="img-container">
+                    <img src="images/icons/citi_bike_visualization.jpg" style="width:100%"
+                        onclick="document.getElementById('citibike').style.display='block'" class="w3-hover-opacity"
+                        alt="Citi Bike Visualization">
+                    <figcaption class="img-content">
+                        <h2 class="title">Citi Bike Visualization</h2>
+                        <h3 class="category">Tableau</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">Citi Bike Visualization</h2>
+                        <h3 class="category">Tableau</h3>
+                    </span>
+                </figure>
+            </div>
+
+            <!-- Citi Bike Visualization Modal Info  -->
+            <div id="citibike" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-blue">
+                        <span onclick="document.getElementById('citibike').style.display='none'"
+                            class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">Citi Bike Visualization</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container citibike">
+                        <h3>Introduction</h3>
+                        <p class="bodytext">Used this big data set provided by Lyft for Citi Bike. Created
+                            data visualization
+                            showing total numbers of participants in generations and genders. Displays
+                            average trip duration by generation and gender.
+                        </p>
+                    </div>
+                    <div id="Procedure" class="w3-container citibike">
+                        <h3>About Citi Bike Visualization</h3>
+                        <p class="bodytext">
+                        <ul class="bodytext">
+                            <li>Citi Bike recorded a big data set that included gender, birth year, traveled
+                                durations per participates, their Bike IDs per participates, numbers of
+                                subscribers/customers, etc. The below chart shows the total number of
+                                participates per generation.</li>
+                            <li>Included total Generations participated in the New York City Trips. Gen-Y
+                                group is the largest of all generations and traveled further away from the
+                                Jersey City area.</li>
+                            <li>Male participants have more population, while Unknown groups traveled more
+                                in time. Female participants have traveled more than male participants.
+                                However, they have less distance traveled than males, and Unknown
+                                participates according to the map.</li>
+                            <li>The most active station is Grove Street, where most of the participants
+                                started their journeys. The most inactive station is Leonard Gordon Park,
+                                which has only 1,077 participates. The value count is the total number of
+                                participants in each station.</li>
+                            <li>Displays a dynamic map for popular starting/ending stations per
+                                beginning/end of the month in the year 2020.</li>
+                        </ul>
+                        </p>
+                        <hr>
+                        <h3>Visualization</h3>
+                        <p><strong>Generations Chart:</strong></p>
+                        <img src="images/projects/citi_bike/citiBike_generation.png" style="width:100%"
+                            class="w3-border" alt="citi_bike_visualization">
+                        <br>
+                        <hr>
+                        <strong>Start And Stop Stations Per Generations:</strong>
+                        <img src="images/projects/citi_bike/citiBike_start_station.png" style="width:100%"
+                            class="w3-border" alt="citi_bike_visualization">
+                        <br>
+                        <hr>
+                        <strong>Start And Stop Stations Per Gender And Generations:</strong>
+                        <img src="images/projects/citi_bike/citiBike_gender.png" style="width:100%" class="w3-border"
+                            alt="citi_bike_visualization">
+                        <br>
+                        <hr>
+                        <strong>Most Active And Least Active Stations:</strong>
+                        <img src="images/projects/citi_bike/citiBike_active_stations.png" style="width:100%"
+                            class="w3-border" alt="citi_bike_visualization">
+                        <br>
+                        <hr>
+                        <strong>Dynamic Map Of Popular Start And End Stations:</strong>
+                        <img src="images/projects/citi_bike/citiBike_intro.png" style="width:100%" class="w3-border"
+                            alt="citi_bike_visualization">
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="Tableau" class="w3-container citibike">
+                        <p class="bodytext">To Learn More: <strong><a
+                                    href="https://public.tableau.com/views/CitiBikeVisualization_16091922262850/Story1?:language=en&:display_count=y&:origin=viz_share_link"
+                                    title="Tableau" target="_blank">Citi Bike Tableau Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-blue w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('citibike').style.display='none'">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- machine learning project modal image  -->
+            <div class="w3-col m3">
+                <figure class="img-container">
+                    <img src="images/icons/exoplanet_machine_learning.jpg" style="width:100%"
+                        onclick="document.getElementById('exoplanet').style.display='block'" class="w3-hover-opacity"
+                        alt="Exoplanet Machine Learning">
+                    <figcaption class="img-content">
+                        <h2 class="title">Exoplanet Exploration</h2>
+                        <h3 class="category">Machine Learning</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">Exoplanet Exploration</h2>
+                        <h3 class="category">Machine Learning</h3>
+                    </span>
+                </figure>
+            </div>
+
+            <!-- machine learning project modal info  -->
+            <div id="exoplanet" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-black">
+                        <span onclick="document.getElementById('exoplanet').style.display='none'"
+                            class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">Exoplanet Exploration</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container exoplanet">
+                        <h3>Introduction</h3>
+                        <p class="bodytext">
+                            Over a period of nine years in deep space, the NASA Kepler space telescope has
+                            been out on a planet-hunting mission to discover hidden planets outside of our
+                            solar system.
+
+                            Used Jupyter Notebook, Pandas, Matplotlib, and Numpy to predict each model to
+                            discover hidden planets outside of our solar system.
+                        </p>
+                    </div>
+
+                    <div id="Procedure" class="w3-container exoplanet">
+                        <h3>Summary of Analysis</h3>
+                        <p><strong>Process of the Work:</strong></p>
+                        <ol class="bodytext">
+                            <li>Clean the Data. Remove any null or empty values of the data.</li>
+                            <li>Preprocess the Data before fitting each model.</li>
+                            <li>Perform feature selection and remove unnecessary features.</li>
+                            <li>Scale the numerical data.</li>
+                            <li>Separate the data into training and testing data.</li>
+                            <li>Tune model parameters.</li>
+                            <li>Tune them and compare the two or more classifiers, such as Candidate,
+                                Confirm, False Positive.</li>
+                        </ol>
+
+                        <h3>Reports</h3>
+
+                        <p class="bodytext"><strong>For All Models:</strong></p>
+                        <ul class="bodytext">
+                            <li>Select all features to be tested.</li>
+                            <li>When we unselect one or more features, we lost accuracy for testing and
+                                training data because testing and training data come out as low as 0.5.
+                                It may happen due to fewer tested or trained features.</li>
+                        </ul>
+                        <hr>
+                        <p class="bodytext"><strong>Logistic Regression Model:</strong></p>
+                        <ul class="bodytext">
+                            <li>This model is somewhat reliable because: R2 Score is 0.857 and MSE is 0.165.
+                                Higher the R2 Score, therefore higher the accuracy. Lower MSE, fewer errors.
+                            </li>
+                            <li>When we unselect one or more features, we lost accuracy for testing and
+                                training data because testing and training data come out as low as 0.5.
+                                It may happen due to fewer tested or trained features.</li>
+                        </ul>
+                        <img src="images/projects/machine_learning/LogisticRegression.png" style="width:100%"
+                            class="w3-border" alt="LogisticRegression">
+                        <ul class="bodytext">
+                            <li>Precision, recall, and f1-score have high numbers that are close to 1.</li>
+                            <li>The value that is closer to the 1 has good prediction.</li>
+                            <li>To be careful, False Positive has very idealistic values for precision,
+                                recall, and f1-score. It means that they are very close to 1 or they reached
+                                1.
+                                If the data is too ideal, it will cause problems. And the data will become
+                                too
+                                perfect.</li>
+                        </ul>
+                        <hr>
+                        <p class="bodytext"><strong>SVM Model:</strong></p>
+                        <ul class="bodytext">
+                            <li>Training Data Score: 0.8600038146099561</li>
+                            <li>Testing Data Score: 0.8478260869565217</li>
+                            <li>Test Acc: 0.848</li>
+                            <li>Best Score: 0.8579013819049768</li>
+
+                        </ul>
+                        <img src="images/projects/machine_learning/svm.png" style="width:100%" class="w3-border"
+                            alt="SVM">
+                        <ul class="bodytext">
+                            <li>Precision, recall, and f1-score have high numbers that are close to 1.</li>
+                            <li>The value that is closer to the 1 has good prediction.</li>
+                            <li>To be careful, False Positive has very idealistic values for precision,
+                                recall, and f1-score. It means that they are very close to 1 or they reached
+                                1.
+                                If the data is too ideal, it will cause problems. And the data will become
+                                too
+                                perfect.</li>
+                        </ul>
+                        <hr>
+                        <p class="bodytext"><strong>KNN Model:</strong></p>
+                        <img src="images/projects/machine_learning/KNN_testing_acc_score.jpg" style="width:45%"
+                            class="w3-border" alt="knn">
+
+                        <img src="images/projects/machine_learning/knn1.png" style="width:45%" class="w3-border"
+                            alt="knn">
+                        <ul class="bodytext">
+                            <li>k=15 Test Acc: 0.830</li>
+                            <li>Best Score: 0.840547886391256</li>
+                            <li>Higher best score means good accuracy for prediction for testing and
+                                training the data.</li>
+                            <li>However, the accuracy of the testing score is no near k neighbors.</li>
+                            <li>This means that the data is not accurate enough to tell the story.</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="exoplanet-github" class="w3-container exoplanet">
+                        <p class="bodytext">To Learn More: <strong><a
+                                    href="https://github.com/erikayi/machine-learning-challenge.git" title="Github"
+                                    target="_blank">Exoplanet
+                                    Exploration Github Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-black w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('exoplanet').style.display='none'">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- ufo sighting modal image  -->
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">
-                <img src="images/icons/js_dom_work.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="JS DOM WORK">
+                <figure class="img-container">
+                    <img src="images/icons/ufo_sightings.jpg" style="width:100%"
+                        onclick="document.getElementById('ufo_sightings').style.display='block'"
+                        class="w3-hover-opacity" alt="UFO Sightings">
+                    <figcaption class="img-content">
+                        <h2 class="title">UFO Sightings Website</h2>
+                        <h3 class="category">JavaScript + DOM</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">UFO Sightings Website</h2>
+                        <h3 class="category">JavaScript + DOM</h3>
+                    </span>
+                </figure>
             </div>
 
-            <div class="w3-col m3">
-                <img src="images/icons/mars_mission.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Mission To Mars">
+            <!-- ufo sighting modal info  -->
+            <div id="ufo_sightings" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-purple">
+                        <span onclick="document.getElementById('ufo_sightings').style.display='none'"
+                            class="w3-button w3-purple w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">UFO Sightings Website</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container ufo_sightings">
+                        <h3>Introduction</h3>
+                        <p class="bodytext">
+                            Using a collection of data resources for UFO Sighting on the Earth, we need to
+                            analyze this big dataset made by "Aliens-R-Real",
+                            and put them into a website for users to see the data and filter them by
+                            specific values in the table.
+                        </p>
+                    </div>
+
+                    <div id="Procedure" class="w3-container ufo_sightings">
+                        <h3>Make a Table and Date Search</h3>
+                        <p class="bodytext"><strong>Part 1:</strong></p>
+                        <img src="images/projects/ufo_sighting/ufo-sightings-1.png" style="width:100%" class="w3-border"
+                            alt="ufo-sighting-option1">
+                        <ol class="bodytext">
+                            <li>First, design a cleaned HTML website for a Table.</li>
+                            <li>Second, write a code for categories in the table, which will search through
+                                the whole page, and, every time the user search through the data by date, it
+                                will listen to every filtered data, and it will write in the console.</li>
+                            <li>Categories included: date/time, city, state, country, shape, duration per
+                                minute, shape, and comment.</li>
+                            <li>Here is the working site for Part I:
+                                <strong><a href="https://erikayi.github.io/ufo-sighting-option1/" title="UFO Sightings"
+                                        target="_blank">UFO Sightings Part
+                                        1</a></strong>
+                            </li>
+                        </ol>
+                        <hr>
+                        <p class="bodytext"><strong>Part 2:</strong></p>
+                        <img src="images/projects/ufo_sighting/ufo-sightings-2.png" style="width:100%" class="w3-border"
+                            alt="ufo-sighting-option2">
+                        <img src="images/projects/ufo_sighting/ufo-sightings-2-a.png" style="width:100%"
+                            class="w3-border" alt="ufo-sighting-option2-searching">
+                        <ol class="bodytext">
+                            <li>Created search bar using JQuery function in the Javascript code, and so that
+                                the user can filter through specific dates, cities, states, countries,
+                                shapes, duration in minutes, shapes, and/or comments in the table provided.
+                            </li>
+                            <li>Here is the working site for Part 2:
+                                <strong><a href="https://erikayi.github.io/ufo-sighting-option2/" title="UFO Sightings"
+                                        target="_blank">UFO Sightings Part
+                                        2</a></strong>
+                            </li>
+                        </ol>
+                        <hr>
+                    </div>
+                    <hr>
+                    <div id="exoplanet-github" class="w3-container exoplanet">
+                        <p class="bodytext">To Learn More: <strong><a href=" " title="Github" target="_blank">UFO
+                                    Sightings
+                                    Github Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-purple w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('ufo_sightings').style.display='none'">Close</button>
+                    </div>
+                </div>
             </div>
 
+            <!-- web scraping modal image  -->
             <div class="w3-col m3">
-                <img src="images/icons/world_happiness.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="World Happiness">
+                <figure class="img-container">
+                    <img src="images/icons/mars_mission.jpg" style="width:100%"
+                        onclick="document.getElementById('web_scraping').style.display='block'" class="w3-hover-opacity"
+                        alt="Mission To Mars">
+                    <figcaption class="img-content">
+                        <h2 class="title">Mission To Mars</h2>
+                        <h3 class="category">Flask App + Mongo DB</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">Mission To Mars</h2>
+                        <h3 class="category">Flask App + Mongo DB</h3>
+                    </span>
+                </figure>
             </div>
 
-            <div class="w3-col m3">
-                <img src="images/icons/world_olympics.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="World Olympics">
+            <!-- web scraping modal info  -->
+            <div id="web_scraping" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-purple">
+                        <span onclick="document.getElementById('web_scraping').style.display='none'"
+                            class="w3-button w3-purple w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">Mission To Mars</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container web_scraping">
+                        <h3>Introduction</h3>
+                        <img src="images/projects/web_scraping/mission_to_mars.png" style="width:100%" class="w3-border"
+                            alt="web_scraping">
+                        <br>
+                        <p class="bodytext">
+                            Using Jupyter Notebok, BeautifulSoup, Pandas, Flask, and Requests/Splinter,
+                            MongoDB, build a web application that contains any related information and
+                            images about Mars.
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="Procedure" class="w3-container web_scraping">
+                        <p class="bodytext"><strong>Create The Web Application:</strong></p>
+                        <ul class="bodytext">
+                            <li>Turn the work into a working application. We will able to see the work in a
+                                local server.</li>
+                            <li>Used Bootstrap for layout designs, which will work on all screen sizes.</li>
+                        </ul>
+                        <img src="images/projects/web_scraping/scraping_final_1.png" style="width:100%"
+                            class="w3-border" alt="web_scraping">
+                        <img src="images/projects/web_scraping/scraping_final_2.png" style="width:100%"
+                            class="w3-border" alt="web_scraping">
+                        <img src="images/projects/web_scraping/scraping_final_3_iphone.png" style="width:25%"
+                            class="w3-border" alt="web_scraping">
+                        <img src="images/projects/web_scraping/scraping_final_4_iphone.png" style="width:25%"
+                            class="w3-border" alt="web_scraping">
+                        <img src="images/projects/web_scraping/scraping_final_5_iphone.png" style="width:25%"
+                            class="w3-border" alt="web_scraping">
+                        <img src="images/projects/web_scraping/scraping_final_6_iphone.png" style="width:25%"
+                            class="w3-border" alt="web_scraping">
+                        <img src="images/projects/web_scraping/scraping_final_7_iphone.png" style="width:25%"
+                            class="w3-border" alt="web_scraping">
+                        <img src="images/projects/web_scraping/scraping_final_8_iphone.png" style="width:25%"
+                            class="w3-border" alt="web_scraping">
+                    </div>
+                    <hr>
+                    <div id="Procedure" class="w3-container web_scraping">
+                        <p class="bodytext"><strong>Scrape The Data:</strong></p>
+                        <ul class="bodytext">
+                            <li>Scrape all the data in mission_to_mars.ipynb, which is a Jupyter Notebook
+                                file that contains all of my scraping and analysis works.</li>
+                            <li>In these scrapes, they contain: NASA Mars News title and description, urls
+                                for JPL Mars Space Featured Images in high resolution, Facts About Mars, and
+                                Mars Hemisphere Image urls.</li>
+                            <img src="images/projects/web_scraping/scraping_jn_1.png" style="width:100%"
+                                class="w3-border" alt="web_scraping">
+                            <img src="images/projects/web_scraping/scraping_jn_2.png" style="width:100%"
+                                class="w3-border" alt="web_scraping">
+                            <img src="images/projects/web_scraping/scraping_jn_3.png" style="width:100%"
+                                class="w3-border" alt="web_scraping">
+                            <img src="images/projects/web_scraping/scraping_jn_4.png" style="width:100%"
+                                class="w3-border" alt="web_scraping">
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="exoplanet-github" class="w3-container web_scraping">
+                        <p class="bodytext">To Learn More: <strong><a
+                                    href="https://github.com/erikayi/web-scraping-challenge.git" title="Github"
+                                    target="_blank">Mission to Mars
+                                    Github Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-purple w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('web_scraping').style.display='none'">Close</button>
+                    </div>
+                </div>
             </div>
+
+            <!-- world happiness modal image  -->
+            <div class="w3-col m3">
+                <figure class="img-container">
+                    <img src="images/icons/world_happiness.jpg" style="width:100%"
+                        onclick="document.getElementById('world_happiness').style.display='block'"
+                        class="w3-hover-opacity" alt="World Happiness">
+                    <figcaption class="img-content">
+                        <h2 class="title">World Happiness</h2>
+                        <h3 class="category">Data Visualization Dashboard</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">World Happiness</h2>
+                        <h3 class="category">Data Visualization Dashboard</h3>
+                    </span>
+                </figure>
+            </div>
+
+            <!-- world happiness modal info  -->
+            <div id="world_happiness" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-purple">
+                        <span onclick="document.getElementById('world_happiness').style.display='none'"
+                            class="w3-button w3-purple w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">The Next Happiest Countries</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container world_happiness">
+                        <h3>Introduction</h3>
+                        <p class="bodytext">
+                            The World Happiness Report is a Gallup World Poll survey of the
+                            state of global happiness that ranks 156 countries. We used the 2019 report for
+                            Project 3. The 2019 data rankings used six key variables to determine the
+                            country rankings of happiness.
+                        </p>
+                    </div>
+
+                    <div id="Procedure" class="w3-container world_happiness">
+                        <h3>World Happiness</h3>
+                        <img src="images/projects/world_happiness/happiness_map.png" style="width:100%"
+                            class="w3-border" alt="World Happiness">
+                        <p class="bodytext"><strong>World Happiness 2019 Portfolio</strong></p>
+                        <ul class="bodytext">
+                            <li>Data Visualization Dashboard:
+                                <strong><a href="https://cjbeimfohr13.github.io/project-3/index.html"
+                                        title="World Happiness" target="_blank">Click Here.</a></strong>
+                            </li>
+                        </ul>
+                        <p class="bodytext"><strong>Data Sources:</strong></p>
+                        <ul class="bodytext">
+                            <li><a href="https://worldhappiness.report/ed/2019/" title="World Happiness"
+                                    target="_blank">World Happiness 2019 Report: </a></li>
+                            <li><a href="https://www.kaggle.com/unsdsn/world-happiness" title="World Happiness"
+                                    target="_blank">Kaggle Resources For World
+                                    Happiness: </a></li>
+                        </ul>
+                        <p class="bodytext"><strong>Technical Skills Used:</strong></p>
+                        <ul class="bodytext">
+                            <li>Scikit-Learn</li>
+                            <li>Pandas</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                            <li>Tableau</li>
+                            <li>Web Development (JavaScript, HTML, CSS & Bootstrap)</li>
+                            <li>Plotly.Express</li>
+                        </ul>
+                        <p class="bodytext"><strong>Machine Learning Models Performed:</strong></p>
+                        <ul class="bodytext">
+                            <li>Linear Regression</li>
+                            <li>Logistic Regression</li>
+                            <li>Deep Learning</li>
+                        </ul>
+                        <p class="bodytext"><strong>Six Key Features In The Dataset: </strong></p>
+                        <ol class="bodytext">
+                            <li>GDP Per Capita</li>
+                            <li>Healthy Life Expectancy</li>
+                            <li>Social Support</li>
+                            <li>Freedom On Life Choices</li>
+                            <li>Generosity</li>
+                            <li>Perceptions Of Corruption</li>
+                        </ol>
+                        <hr>
+                    </div>
+                    <div id="world_happiness-github" class="w3-container world_happiness">
+                        <p class="bodytext">To Learn More: <strong><a
+                                    href="https://github.com/cjbeimfohr13/project-3.git" title="Github"
+                                    target="_blank">World Happiness
+                                    Github Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-purple w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('world_happiness').style.display='none'">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- world olympics modal image  -->
+            <div class="w3-col m3">
+                <figure class="img-container">
+                    <img src="images/icons/world_olympics.jpg" style="width:100%"
+                        onclick="document.getElementById('world_olympics').style.display='block'"
+                        class="w3-hover-opacity" alt="World Olympics">
+                    <figcaption class="img-content">
+                        <h2 class="title">World Olympics</h2>
+                        <h3 class="category">Data Visualization Dashboard</h3>
+                    </figcaption>
+                    <span class="img-content-hover">
+                        <h2 class="title">World Olympics</h2>
+                        <h3 class="category">Data Visualization Dashboard</h3>
+                    </span>
+                </figure>
+            </div>
+
+            <!-- word olympics modal info  -->
+            <div id="world_olympics" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-purple">
+                        <span onclick="document.getElementById('world_olympics').style.display='none'"
+                            class="w3-button w3-purple w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="project_title">USA Olympic Gold Medal Data Visualization</h2>
+                    </header>
+
+                    <div id="Introduction" class="w3-container world_olympics">
+                        <h3>Introduction</h3>
+                        <p class="bodytext">
+                        <ol class="bodytext">
+                            <li>Continued our ETL work on USA Olympic Gold Medal wins from 1976-2016</li>
+                            <li>Designed a Dashboard web application that utilized D3, Plotly, and Leaflet to create
+                                visualizations of the number of gold medal winners by sport and gender </li>
+                            <li>Displayed the locations of each Olympic host country in each year on the Leaflet map
+                            </li>
+                            <li>Connected our Leaflet map to a Flask app to render on the dashboard for public use</li>
+                        </ol>
+                        </p>
+                        <h3>Table of Content</h3>
+                        <p class="bodytext w3-center">
+                        <ul class="bodytext">
+                            <li>Pie-chart displaying male and female athletes per year including the percentage of each
+                                per year.</li>
+                            <li>Multi-line chart to display both male and female athletes per year.</li>
+                            <li>Bar-chart showing the number of gold medals obtain by each sport in the USA.</li>
+                            <li>Satelite and street map displaying the world and olympic game locations for their given
+                                year.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div id="Procedure" class="w3-container world_olympics">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p class="bodytext w3-center"><strong>Home Page</strong>
+                            <img src="images/projects/world_olympics/homepage.PNG" style="width:100%" class="w3-border"
+                                alt="world_olympics">
+                        </p>
+                        <p class="bodytext w3-center">
+                            <img src="images/projects/world_olympics/homepage2.PNG" style="width:100%" class="w3-border"
+                                alt="world_olympics">
+                        </p>
+                        <p class="bodytext w3-center">
+                            <img src="images/projects/world_olympics/homepage-dropdown1.jpg" style="width:100%"
+                                class="w3-border" alt="world_olympics">
+                        </p>
+                        <p class="bodytext w3-center">
+                            <img src="images/projects/world_olympics/homepage-dropdown2.jpg" style="width:100%"
+                                class="w3-border" alt="world_olympics">
+                        </p>
+
+                        <br>
+
+                        <p class="bodytext w3-center"><strong>Gender</strong>
+                            <img src="images/projects/world_olympics/gender.png" style="width:100%" class="w3-border"
+                                alt="gender">
+                        </p>
+                        <p class="bodytext w3-center">
+                            <img src="images/projects/world_olympics/gender2.png" style="width:100%" class="w3-border"
+                                alt="gender">
+                        </p>
+                        <p class="bodytext w3-center">
+                            <img src="images/projects/world_olympics/gender3.png" style="width:100%" class="w3-border"
+                                alt="gender">
+                        </p>
+
+                        <br>
+
+                        <p class="bodytext w3-center"><strong>Map</strong>
+                            <img src="images/projects/world_olympics/map.png" style="width:100%" class="w3-border"
+                                alt="map">
+                        </p>
+
+                        <br>
+
+                        <p class="bodytext w3-center"><strong>Pie Chart</strong>
+                            <img src="images/projects/world_olympics/pie_chart.png" style="width:100%" class="w3-border"
+                                alt="ufo-sighting-option1">
+                            <img src="images/projects/world_olympics/piechart-dropdown.jpg" style="width:100%"
+                                class="w3-border" alt="piechart-dropdown">
+                        </p>
+
+                        <br>
+
+                        <p class="bodytext w3-center"><strong>Events</strong>
+                            <img src="images/projects/world_olympics/events.png" style="width:100%" class="w3-border"
+                                alt="events">
+                            <img src="images/projects/world_olympics/events-dropdown.jpg" style="width:100%"
+                                class="w3-border" alt="events-dropdown">
+                        </p>
+
+                        <br>
+
+                        <p class="bodytext w3-center"><strong>Olympic Gold Medal Dataset</strong>
+                            <img src="images/projects/world_olympics/dataset.png" style="width:100%" class="w3-border"
+                                alt="olympic_dataset">
+                        </p>
+                        <hr>
+                        <h3>Data Visualization Web Application Demo</h3>
+                        <p class="bodytext w3-center">
+                            <strong>First Half Demonstration</strong>
+                            <img src="images/projects/world_olympics/olympic_short_first_half.gif" style="width:100%"
+                                class="w3-border" alt="olympic_short_first_half">
+                            <strong>Second Half Demonstration</strong>
+                            <img src="images/projects/world_olympics/olympic_short_second_half.gif" style="width:100%"
+                                class="w3-border" alt="olympic_short_second_half">
+                            <strong>Dataset Demonstration</strong>
+                            <img src="images/projects/world_olympics/olympic_short_dataset.gif" style="width:100%"
+                                class="w3-border" alt="olympic_short_dataset">
+                        </p>
+                        <hr>
+                    </div>
+                    <div id="world_olympics-github" class="w3-container world_olympics">
+                        <p class="bodytext">To Learn More: <strong><a href="https://github.com/tnatoli29/Project-2.git"
+                                    title="Github" target="_blank">World Olympics
+                                    Github Page</a></strong></p>
+                        <br>
+                    </div>
+
+                    <div class="w3-container w3-purple w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('world_olympics').style.display='none'">Close</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
         <div class="w3-row-padding w3-center w3-section">
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">
+            <button class="w3-button" style="margin-top:64px">
                 To My Github Page:
-                <div class="w3-xxxlarge w3-section">
+                <div class="w3-xxlarge">
                     <a href="https://github.com/erikayi" title="Github" target="_blank"><i
                             class="fa fa-github w3-hover-opacity"></i></a>
                 </div>
             </button>
-        </div>
-
-    </div>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-                class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
         </div>
     </div>
 
@@ -232,56 +1105,58 @@
             <div class="w3-col m4 w3-container">
                 <img src="images/timo-wielink-unsplash.jpg" class="w3-image w3-round" style="width:100%">
                 <span class="copyrightPhoto-map">Photo by
-                    <a href="https://unsplash.com/@timowielink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-                        Timo Wielink </a> on 
-                        <a href="https://unsplash.com/s/photos/map?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                    <a
+                        href="https://unsplash.com/@timowielink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                        Timo Wielink </a> on
+                    <a
+                        href="https://unsplash.com/s/photos/map?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
                         Unsplash </a>
                 </span>
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
                     New Jersey, US <br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
                     Phone: +1 856.449.5868<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
                     Email: erikayidesign@gmail.com<br>
                 </div>
+
+                <!-- contact form  -->
                 <p>Grab for a cup of <i class="fa fa-coffee"></i>, or leave me a side note:</p>
-                <form action="/action_page.php" target="_blank">
+                <form action="contact.php" method="POST" enctype="multipart/form-data" target="_blank">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            <input class="w3-input w3-border" type="name" placeholder="Name" required name="Name">
                         </div>
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
                         </div>
                     </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <i class="fa fa-paper-plane"></i> SHOOT ME A MESSAGE
-                    </button>
+                    <input class="w3-input w3-border" type="message" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit" value="submit">
+                        <i class="fa fa-paper-plane"></i> SEND </button>
                 </form>
+
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-red w3-padding-64 w3-opacity w3-hover-opacity-off">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back To the
-            top</a>
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>
+            Back To the top
+        </a>
         <div class="w3-xlarge w3-section">
-            <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-            <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
-            <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-            <!-- <a href="https://www.pinterest.com/erika_kyi" title="Pinterest" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a> -->
             <a href="https://www.twitter.com/kiyokarina" title="Twitter" target="_blank"><i
                     class="fa fa-twitter w3-hover-opacity"></i></a>
             <a href="https://www.linkedin.com/in/erikayidesign/" title="LinkedIn" target="_blank"><i
                     class="fa fa-linkedin w3-hover-opacity"></i></a>
-            <!-- <a href="https://www.erikayidesign.com" title="Design Portfolio" target="_blank"><i class="fa fa-behance w3-hover-opacity"></i></a> -->
+            <a href="https://github.com/erikayi" title="Github" target="_blank"><i
+                    class="fa fa-github w3-hover-opacity"></i></a>
         </div>
-        <p>© Erika Yi 2021. All Rights Reserved.</p>
+        <p class="copyright">&copy; Copyright 2021 Erika Yi</p>
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
                 class="w3-hover-text-blue">w3.css</a></p>
     </footer>
