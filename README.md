@@ -2,7 +2,5 @@
 
 * erikayi.github.io
 
-* Tells about my hobbies, favorite music, games to play, etc.
+* Highlights my recent data analytic works, my skill set, and some fun facts about me. 
 
-Currently, it is underconstruction...
-I will add more works and edit my profile page.
