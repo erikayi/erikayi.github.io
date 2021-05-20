@@ -1,7 +1,7 @@
 ### Hi!👋 I’m Erika Yi. I'm a Data Scientist, and I mainly work on Python, PySpark, PostgreSQL, Tableau, and JavaScript. 
 
-- **📌 My Github portfolio: erikayi.github.io**
-- **📌 My Tableau public portfolio: https://public.tableau.com/profile/erika.yi**
+- **📌 My Github portfolio link: https://erikayi.github.io**
+- **📌 My Tableau public portfolio link: https://public.tableau.com/profile/erika.yi**
 
     - 👀 I’m interested in Python, API, R (Programming Language), Big Data, Machine Learning, Data Visualization, Data Engineering, and Data Analytics.
     - ✨ I'm expert at Python, Pandas, JavaScript, HTML/CSS, PySpark, ETL, Postgresql, pgAdmin, and Tableau.
