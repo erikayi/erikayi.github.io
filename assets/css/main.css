@@ -8,8 +8,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -45,12 +49,16 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
@@ -66,12 +74,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 {
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: 50px;
   margin: 0;
   padding: 0;
   line-height: 1;
+  font-family: neuzeit-grotesk, sans-serif;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  /* font-weight: 700; */
+  /* font-family: "Poppins", sans-serif; */
 }
 
 #header h1 a, #header h1 a:hover {
@@ -81,7 +93,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 26px;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -103,7 +116,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a {
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +155,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
 /* Desktop Navigation */
+
 .nav-menu {
   margin-top: 35px;
 }
@@ -153,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.nav-menu li + li {
+.nav-menu li+li {
   margin-left: 30px;
 }
 
@@ -161,9 +177,13 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  /* font-size: 18px; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-weight: 400; */
 }
 
 .nav-menu a:before {
@@ -179,17 +199,18 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+.nav-menu a:hover:before, .nav-menu li:hover>a:before, .nav-menu .active>a:before {
   visibility: visible;
   width: 25px;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
   color: #fff;
   text-decoration: none;
 }
 
 /* Mobile Navigation */
+
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -197,7 +218,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 26px;
   transition: all 0.4s;
   outline: none !important;
   line-height: 1;
@@ -237,11 +259,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #fff;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 400;
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover, .mobile-nav .active>a, .mobile-nav li:hover>a {
   color: #18a7d2;
   text-decoration: none;
 }
@@ -273,6 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Header Top */
+
 #header.header-top {
   height: 80px;
   position: fixed;
@@ -288,7 +311,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-top h1 {
   margin-right: auto;
-  font-size: 36px;
+  font-size: 38px;
+  /* font-size: 36px; */
 }
 
 #header.header-top .container {
@@ -305,13 +329,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
   }
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 28px;
+    /* font-size: 26px; */
   }
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
 section {
   overflow: hidden;
   position: absolute;
@@ -345,15 +371,18 @@ section .container {
 }
 
 .section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
+  /* font-size: 14px; */
+  font-size: 16px;
+  font-weight: 700;
   padding: 0;
   line-height: 1px;
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .section-title h2::after {
@@ -368,19 +397,24 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  /* font-family: "Poppins", sans-serif; */
   color: #fff;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 30px;
   color: #18a7d2;
 }
 
@@ -394,7 +428,8 @@ section .container {
 }
 
 .about-me .content ul i {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 26px;
   padding-right: 2px;
   color: #18a7d2;
 }
@@ -406,6 +441,7 @@ section .container {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
+
 .counts {
   padding: 70px 0 60px;
 }
@@ -423,7 +459,8 @@ section .container {
   top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 26px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
   color: #18a7d2;
@@ -431,7 +468,8 @@ section .container {
 }
 
 .counts .count-box span {
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 38px;
   display: block;
   font-weight: 600;
   color: #fff;
@@ -440,13 +478,18 @@ section .container {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-size: 14px; */
+  font-size: 16px;
 }
 
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 50px;
   display: block;
@@ -458,8 +501,12 @@ section .container {
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  /* font-weight: 600; */
+  /* font-family: "Poppins", sans-serif; */
   color: #fff;
 }
 
@@ -482,6 +529,7 @@ section .container {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -491,7 +539,8 @@ section .container {
 }
 
 .interests .icon-box i {
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: 34px;
   padding-right: 10px;
   line-height: 1;
 }
@@ -501,7 +550,8 @@ section .container {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 18px;
   color: #fff;
 }
 
@@ -510,8 +560,9 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# Testimonials (Save for later)
 --------------------------------------------------------------*/
+/* 
 .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
@@ -590,13 +641,15 @@ section .container {
   .testimonials {
     margin: 30px 10px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
 .resume .resume-title {
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 28px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -612,20 +665,25 @@ section .container {
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
+  /* font-size: 18px; */
+  font-size: 20px;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  /* font-weight: 600; */
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   color: #18a7d2;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 18px;
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -656,6 +714,7 @@ section .container {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
@@ -679,7 +738,8 @@ section .container {
 
 .services .icon-box .icon i {
   color: #fff;
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-size: 30px;
 }
 
 .services .icon-box .icon::before {
@@ -698,7 +758,8 @@ section .container {
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 26px;
 }
 
 .services .icon-box h4 a {
@@ -707,7 +768,8 @@ section .container {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -735,6 +797,7 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -752,8 +815,9 @@ section .container {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
+  /* font-size: 14px; */
+  font-size: 16px;
+  font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
@@ -837,14 +901,16 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 22px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -858,7 +924,8 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 2px;
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-size: 30px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -892,6 +959,7 @@ section .container {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info-box {
   color: #444444;
   padding: 20px;
@@ -900,7 +968,8 @@ section .container {
 }
 
 .contact .info-box i.bx {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 26px;
   color: #18a7d2;
   border-radius: 50%;
   padding: 14px;
@@ -909,7 +978,8 @@ section .container {
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
   margin: 10px 0 8px 68px;
@@ -919,7 +989,8 @@ section .container {
   padding: 0;
   color: #fff;
   line-height: 24px;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
   margin: 0 0 0 68px;
 }
 
@@ -951,7 +1022,8 @@ section .container {
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
-  font-size: 13px;
+  /* font-size: 13px; */
+  font-size: 15px;
 }
 
 .contact .php-email-form .error-message {
@@ -963,7 +1035,7 @@ section .container {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -973,7 +1045,7 @@ section .container {
   background: #18d26e;
   text-align: center;
   padding: 15px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .contact .php-email-form .loading {
@@ -999,7 +1071,8 @@ section .container {
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
   background: rgba(255, 255, 255, 0.08);
   border: 0;
   transition: 0.3s;
@@ -1077,6 +1150,7 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
 .portfolio-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
@@ -1094,7 +1168,8 @@ section .container {
 }
 
 .portfolio-details .portfolio-title {
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1122,7 +1197,8 @@ section .container {
 }
 
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -1130,15 +1206,17 @@ section .container {
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 17px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
 .portfolio-details .portfolio-info p {
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 17px;
   padding: 15px 0 0 0;
 }
 
@@ -1151,6 +1229,7 @@ section .container {
 /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
+
 .credits {
   position: fixed;
   right: 0;
