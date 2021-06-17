@@ -1,12 +1,25 @@
-### Hi!👋 I’m Erika Yi. I'm a Data Scientist, and I mainly work on Python, PySpark, PostgreSQL, Tableau, and JavaScript. 
+<div align="center">
 
-- **📌 My Github portfolio link: https://erikayi.github.io**
-- **📌 My Tableau public portfolio link: https://public.tableau.com/profile/erika.yi**
+### Hi!👋 I’m @erikayi
+	
+### 👩‍💻About Me
 
-    - 👀 I’m interested in Python, API, R (Programming Language), Big Data, Machine Learning, Data Visualization, Data Engineering, and Data Analytics.
-    - ✨ I'm expert at Python, Pandas, JavaScript, HTML/CSS, PySpark, ETL, Postgresql, pgAdmin, and Tableau.
-    - 🌱 I’m currently learning React.js.
-    - 📌 I'm currently working on Twitter API and Spotify API. 
-    - 💞️ I’m looking to collaborate on Data Visualization, Big Data, Data Engineering, Data Analytics, and Machine Learning.
+🎶Passionate in **Python**, **API**, **Big Data**, **Machine Learning**, **Data Visualization**, **Data Engineering**, and **Data Analytics**.🎶
+<p>Hands-on experiences in Python, Python libraries, JS, JS libraries, HTML/CSS, Spark, ETL, PostgreSQL, MongoDB, Tableau, and more.</p>
 
-        - **📫 Feel free to reach me at erikayidesign@gmail.com for collaboration, projects, and freelance work!**
+✨*Current Status: Creating a web app + stunning doodles for personal projects*✨
+
+***
+### 🔗Portfolio Links
+📍 [My Github](https://github.com/erikayi "My Github Profile") | 📍[My Github Portfolio](https://erikayi.github.io "My Github Portfolio") | 📍[My Tableau](https://public.tableau.com/profile/erika.yi "My Tableau Page")
+
+***
+### 💞 Let's Collaborate!
+📧 Please reach me at <erikayidesign@gmail.com> for collaboration, projects, opportunities, and more!!
+	
+</div>
+
+<!---
+erikayi/erikayi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
