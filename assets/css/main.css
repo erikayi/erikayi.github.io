@@ -1,31 +1,27 @@
-/**
-* Template Name: Personal - v2.5.1
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
 body {
   /* font-family: "Open Sans", sans-serif; */
-  font-family: neuzeit-grotesk, sans-serif;
-  font-weight: 400;
+  /* font-family: neuzeit-grotesk, sans-serif; */
+  /* font-weight: 400; */
+  text-align: center;
+  font-family: monospace;
   font-style: normal;
   background-color: #040404;
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: relative;
   background: transparent;
 }
 
 body::before {
+  /* filter: brightness(70%); */
+  /* background: #040404 url("../images/bridge_river.jpg") top right no-repeat; */
   content: "";
   position: fixed;
-  background: #040404 url("../images/bridge_river.jpg") top right no-repeat;
+  background: #040404;
   background-size: cover;
-  filter: brightness(50%);
   left: 0;
   right: 0;
   top: 0;
@@ -33,13 +29,14 @@ body::before {
   z-index: -1;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   body::before {
     background-attachment: fixed;
   }
 }
 
 a {
+  margin-top: 150px;
   color: #18a7d2;
 }
 
@@ -48,9 +45,16 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   /* font-family: "Raleway", sans-serif; */
-  font-family: neuzeit-grotesk, sans-serif;
+  /* font-family: neuzeit-grotesk, sans-serif; */
+  margin-top: 150px;
+  font-family: monospace;
   font-weight: 400;
   font-style: normal;
 }
@@ -79,14 +83,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: neuzeit-grotesk, sans-serif;
+  /* font-family: neuzeit-grotesk, sans-serif; */
+  font-family: monospace;
   font-weight: 700;
   font-style: normal;
   /* font-weight: 700; */
   /* font-family: "Poppins", sans-serif; */
 }
 
-#header h1 a, #header h1 a:hover {
+#header h1 a,
+#header h1 a:hover {
   color: #fff;
   line-height: 1;
   display: inline-block;
@@ -130,21 +136,24 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 
-#header .social-links a:hover {
+#header .section-title a:hover {
   background: #18a7d2;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 640px) {
   #header h1 {
     font-size: 36px;
   }
+
   #header h2 {
     font-size: 20px;
     line-height: 30px;
   }
-  #header .social-links {
-    margin-top: 15px;
+
+  #header .section-title {
+    margin-top: 150px;
   }
+
   #header .container {
     display: flex;
     flex-direction: column;
@@ -152,12 +161,65 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ------------------------------------------
+# skills set  
+-------------------------------------------*/
+
+.section-title h2 {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: monospace;
+  font-style: normal;
+  /* text-transform: uppercase; */
+  /* font-family: neuzeit-grotesk, sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: #18a7d2;
+  margin: 4px 10px;
+}
+
+.section-title h5 {
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: monospace;
+  font-style: normal;
+  color: #fff;
+  /* text-transform: uppercase; */
+  /* font-family: neuzeit-grotesk, sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+}
+
+/*--------------------------------------------------------------
+# Contact 
+--------------------------------------------------------------*/
+
+.btn-group {
+  font-size: 16px;
+  font-weight: 700px;
+  font-family: monospace;
+  font-style: normal;
+  text-decoration: none;
+  margin: 5px;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 
 /* Desktop Navigation */
-
+/* 
 .nav-menu {
   margin-top: 35px;
 }
@@ -177,15 +239,21 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
+  background-color: #040404;
+  height:fit-content;
+  width: 70px;
+  text-align: center;
+  border-radius: 5px;
   font-family: neuzeit-grotesk, sans-serif;
+  font-family: monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  /* font-size: 18px; */
-  /* font-family: "Poppins", sans-serif; */
-  /* font-weight: 400; */
-}
-
+  font-size: 18px; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+} */
+/* 
 .nav-menu a:before {
   content: "";
   position: absolute;
@@ -210,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Navigation */
-
+/* 
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -218,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9998;
   border: 0;
   background: none;
-  /* font-size: 24px; */
+  font-size: 24px;
   font-size: 26px;
   transition: all 0.4s;
   outline: none !important;
@@ -292,11 +360,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
-}
+} */
 
 /* Header Top */
 
-#header.header-top {
+/* #header.header-top {
   height: 80px;
   position: fixed;
   left: 0;
@@ -312,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top h1 {
   margin-right: auto;
   font-size: 38px;
-  /* font-size: 36px; */
+  font-size: 36px;
 }
 
 #header.header-top .container {
@@ -322,22 +390,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-top .nav-menu {
   margin: 0;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #header.header-top {
     height: 60px;
   }
   #header.header-top h1 {
     font-size: 28px;
-    /* font-size: 26px; */
+    font-size: 26px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-
+/* 
 section {
   overflow: hidden;
   position: absolute;
@@ -359,19 +427,19 @@ section.section-show {
 section .container {
   background: rgba(0, 0, 0, 0.9);
   padding: 30px;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   section {
     top: 120px;
   }
   section.section-show {
     top: 80px;
   }
-}
-
+} */
+/* 
 .section-title h2 {
-  /* font-size: 14px; */
+  font-size: 14px;
   font-size: 16px;
   font-weight: 700;
   padding: 0;
@@ -381,8 +449,9 @@ section .container {
   text-transform: uppercase;
   color: #aaaaaa;
   font-family: neuzeit-grotesk, sans-serif;
+  font-family: monospace;
   font-style: normal;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 .section-title h2::after {
@@ -397,38 +466,39 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  /* font-size: 36px; */
+  font-size: 36px;
   font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: neuzeit-grotesk, sans-serif;
+  font-family: monospace;
   font-style: normal;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
+/* 
 .about-me .content h3 {
   font-weight: 700;
-  /* font-size: 26px; */
+  font-size: 26px;
   font-size: 30px;
   color: #18a7d2;
-}
+} */
 
-.about-me .content ul {
+/* .about-me .content ul {
   list-style: none;
   padding: 0;
-}
-
+} */
+/* 
 .about-me .content ul li {
   padding-bottom: 10px;
 }
 
 .about-me .content ul i {
-  /* font-size: 20px; */
+  font-size: 20px;
   font-size: 26px;
   padding-right: 2px;
   color: #18a7d2;
@@ -436,12 +506,12 @@ section .container {
 
 .about-me .content p:last-child {
   margin-bottom: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-
+/* 
 .counts {
   padding: 70px 0 60px;
 }
@@ -459,7 +529,7 @@ section .container {
   top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  /* font-size: 24px; */
+  font-size: 24px;
   font-size: 26px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
@@ -468,7 +538,7 @@ section .container {
 }
 
 .counts .count-box span {
-  /* font-size: 36px; */
+  font-size: 36px;
   font-size: 38px;
   display: block;
   font-weight: 600;
@@ -479,17 +549,18 @@ section .container {
   padding: 0;
   margin: 0;
   font-family: neuzeit-grotesk, sans-serif;
+  font-family: monospace;
   font-weight: 400;
   font-style: normal;
-  /* font-family: "Raleway", sans-serif; */
-  /* font-size: 14px; */
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
   font-size: 16px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-
+/* 
 .skills .progress {
   height: 50px;
   display: block;
@@ -503,10 +574,11 @@ section .container {
   display: block;
   font-size: 14px;
   font-family: neuzeit-grotesk, sans-serif;
+  font-family: monospace;
   font-weight: 700;
   font-style: normal;
-  /* font-weight: 600; */
-  /* font-family: "Poppins", sans-serif; */
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -524,12 +596,12 @@ section .container {
   height: 10px;
   transition: .9s;
   background-color: #18a7d2;
-}
+} */
 
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
-
+/* 
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -539,7 +611,7 @@ section .container {
 }
 
 .interests .icon-box i {
-  /* font-size: 32px; */
+  font-size: 32px;
   font-size: 34px;
   padding-right: 10px;
   line-height: 1;
@@ -550,14 +622,14 @@ section .container {
   margin: 0;
   padding: 0;
   line-height: 1;
-  /* font-size: 16px; */
+  font-size: 16px;
   font-size: 18px;
   color: #fff;
 }
 
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials (Save for later)
@@ -646,9 +718,9 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-
+/* 
 .resume .resume-title {
-  /* font-size: 26px; */
+  font-size: 26px;
   font-size: 28px;
   font-weight: 700;
   margin-top: 20px;
@@ -665,20 +737,21 @@ section .container {
 
 .resume .resume-item h4 {
   line-height: 18px;
-  /* font-size: 18px; */
+  font-size: 18px;
   font-size: 20px;
   font-family: neuzeit-grotesk, sans-serif;
+  font-family: monospace;
   font-weight: 700;
   font-style: normal;
-  /* font-weight: 600; */
+  font-weight: 600;
   text-transform: uppercase;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
   color: #18a7d2;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
-  /* font-size: 16px; */
+  font-size: 16px;
   font-size: 18px;
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
@@ -709,12 +782,12 @@ section .container {
   top: 0;
   background: #18a7d2;
   border: 2px solid #18a7d2;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-
+/* 
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
@@ -738,7 +811,7 @@ section .container {
 
 .services .icon-box .icon i {
   color: #fff;
-  /* font-size: 28px; */
+  font-size: 28px;
   font-size: 30px;
 }
 
@@ -758,7 +831,7 @@ section .container {
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  /* font-size: 24px; */
+  font-size: 24px;
   font-size: 26px;
 }
 
@@ -768,7 +841,7 @@ section .container {
 
 .services .icon-box p {
   line-height: 24px;
-  /* font-size: 14px; */
+  font-size: 14px;
   font-size: 16px;
   margin-bottom: 0;
 }
@@ -792,12 +865,12 @@ section .container {
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-
+/* 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -815,7 +888,7 @@ section .container {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  /* font-size: 14px; */
+  font-size: 14px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
@@ -901,7 +974,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  /* font-size: 20px; */
+  font-size: 20px;
   font-size: 22px;
   color: #fff;
   font-weight: 700;
@@ -909,7 +982,7 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
-  /* font-size: 14px; */
+  font-size: 14px;
   font-size: 16px;
   text-transform: uppercase;
   padding: 0;
@@ -924,7 +997,7 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 2px;
-  /* font-size: 28px; */
+  font-size: 28px;
   font-size: 30px;
   display: inline-block;
   transition: 0.3s;
@@ -954,12 +1027,12 @@ section .container {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
+/* 
 .contact .info-box {
   color: #444444;
   padding: 20px;
@@ -968,7 +1041,7 @@ section .container {
 }
 
 .contact .info-box i.bx {
-  /* font-size: 24px; */
+  font-size: 24px;
   font-size: 26px;
   color: #18a7d2;
   border-radius: 50%;
@@ -978,7 +1051,7 @@ section .container {
 }
 
 .contact .info-box h3 {
-  /* font-size: 20px; */
+  font-size: 20px;
   font-size: 22px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
@@ -989,7 +1062,7 @@ section .container {
   padding: 0;
   color: #fff;
   line-height: 24px;
-  /* font-size: 14px; */
+  font-size: 14px;
   font-size: 16px;
   margin: 0 0 0 68px;
 }
@@ -1022,7 +1095,7 @@ section .container {
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
-  /* font-size: 13px; */
+  font-size: 13px;
   font-size: 15px;
 }
 
@@ -1071,7 +1144,7 @@ section .container {
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  /* font-size: 14px; */
+  font-size: 14px;
   font-size: 16px;
   background: rgba(255, 255, 255, 0.08);
   border: 0;
@@ -1127,12 +1200,13 @@ section .container {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #18a7d2;
-}
+} */
 
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1142,6 +1216,7 @@ section .container {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1150,7 +1225,7 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-
+/* 
 .portfolio-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
@@ -1168,7 +1243,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-title {
-  /* font-size: 26px; */
+  font-size: 26px;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1197,7 +1272,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-info h3 {
-  /* font-size: 22px; */
+  font-size: 22px;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -1206,7 +1281,7 @@ section .container {
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  /* font-size: 15px; */
+  font-size: 15px;
   font-size: 17px;
 }
 
@@ -1215,7 +1290,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-info p {
-  /* font-size: 15px; */
+  font-size: 15px;
   font-size: 17px;
   padding: 15px 0 0 0;
 }
@@ -1224,12 +1299,12 @@ section .container {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
-
+/* 
 .credits {
   position: fixed;
   right: 0;
@@ -1257,4 +1332,4 @@ section .container {
 
 .credits a:hover {
   color: #fff;
-}
+} */

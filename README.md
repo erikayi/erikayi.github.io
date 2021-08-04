@@ -1,23 +1,25 @@
-<div align="center">
-
-### Hi!👋 I’m @erikayi
-	
-### 👩‍💻About Me
-
-🎶Passionate in **Python**, **API**, **Big Data**, **Machine Learning**, **Data Visualization**, **Data Engineering**, and **Data Analytics**.🎶
-<p>Hands-on experiences in Python, Python libraries, JS, JS libraries, HTML/CSS, Spark, ETL, PostgreSQL, MongoDB, Tableau, and more.</p>
-
-✨*Current Status: Creating a web app + stunning doodles for personal projects*✨
+### Hi, I’m Erika!👋
 
 ***
-### 🔗Portfolio Links
-📍 [My Github](https://github.com/erikayi "My Github Profile") | 📍[My Github Portfolio](https://erikayi.github.io "My Github Portfolio") | 📍[My Tableau](https://public.tableau.com/profile/erika.yi "My Tableau Page")
 
-***
-### 💞 Let's Collaborate!
-📧 Please reach me at <erikayidesign@gmail.com> for collaboration, projects, opportunities, and more!!
+**I'm a Data Scientist/Engineer based on New Jersey.**
 	
-</div>
+- ✨ I'm currently looking for awesome team to work together! ✨
+- 🎯 I use daily: `API`, `.py`, `.ipynb`, `.csv`, `.html`, `.css`, `.js`, `.sqlite`, `.sql`, `.sav`, `.xlsx`, `.twbx`, `.json`
+- 🌱 I'm currently exploring more on: **React**, **Node**, **AWS**
+- 💬 Ping me about: **Graphic Design**, **Web Design**, **Art**, **Resident Evil Series**
+- 🎨 Love: `.psd`, `.ai`, `.indd`
+- 💜 I'm spirited about: **Gaming**, **Resident Evil Series**, **Monster Hunter**, **My Buddy 🐶Koco**
+- 😆 Passionate in helping others to build, to create, and to design codes! 
+
+**Discover me on social media:**
+
+- 💼 Connect me on [Linkedin](https://linkedin.com/in/erikayidesign "Linkedin")
+- 🌐 Continously update my portfolio with recent projects on [Portfolio](https://erikayi.github.io "Portfolio")
+- 📊 My data visualization work will be find here: [Tableau](https://public.tableau.com/profile/erika.yi "Tableau")
+- 🦜 Join me talking about daily Tech, Olympics, Gaming, and K-pop: [Twitter](https://twitter.com/kiyokarina "Twitter")
+- 📧 Feel free to reach me at <erikayidesign@gmail.com> or [Twitter](https://twitter.com/kiyokarina "Twitter") 
+
 
 <!---
 erikayi/erikayi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
