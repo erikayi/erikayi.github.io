@@ -18,7 +18,7 @@
 - 🌐 Continously update my portfolio with recent projects on [Portfolio](https://erikayi.github.io "Portfolio")
 - 📊 My data visualization work will be find here: [Tableau](https://public.tableau.com/profile/erika.yi "Tableau")
 - 🦜 Join me talking about daily Tech, Olympics, Gaming, and K-pop: [Twitter](https://twitter.com/erikayi_dev "Twitter")
-- 📧 Feel free to reach me at <yi.erika2@gmail.com> or [Twitter](https://twitter.com/erikayi_dev "Twitter") 
+- 📧 Feel free to reach me at <erikayidesign@gmail.com> or [Twitter](https://twitter.com/erikayi_dev "Twitter") 
 
 
 <!---
