@@ -2,7 +2,7 @@
 
 ***
 
-**I'm a Data Scientist/Engineer based on New Jersey.**
+**I'm a Data-Driven Designer/Developer based on New Jersey.**
 	
 - ✨ I'm currently looking for awesome team to work together! ✨
 - 🎯 I use daily: `API`, `.py`, `.ipynb`, `.csv`, `.html`, `.css`, `.js`, `.sqlite`, `.sql`, `.sav`, `.xlsx`, `.twbx`, `.json`
