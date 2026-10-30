@@ -1,4 +1,8 @@
-### Hi, I’m Erika!👋
+# Let's Eat Them All 
+
+
+
+<!--### Hi, I’m Erika!👋
 
 ***
 
@@ -15,7 +19,7 @@
 **Discover me on social media:**
 
 <!-- - 💼 Connect me on [Linkedin](https://linkedin.com/in/erikayidesign "Linkedin") -->
-- 🌐 My Github Portfolio: [Portfolio](https://erikayi.github.io "Portfolio")
+<!--- 🌐 My Github Portfolio: [Portfolio](https://erikayi.github.io "Portfolio")
 - 📊 My Tableau Page: [Tableau](https://public.tableau.com/profile/erika.yi "Tableau")
 - 🦜 Join me talking about daily Tech, Olympics, Gaming, and K-pop: [Twitter](https://twitter.com/erikayi_dev "Twitter")
 - 📧 Feel free to reach me at <erikayidesign@gmail.com> or [Twitter](https://twitter.com/erikayi_dev "Twitter") 
