@@ -1,6 +1,6 @@
-# Let's Eat Them All 
+### I'm a design engineer based on NJ/NYC/PA. I'm open to remote!
 
-
+![Packman Mars Earth Sun](assets/images/packman-mars-earth-sun-ErikaYi-Alessia.png)
 
 <!--### Hi, I’m Erika!👋
 
