@@ -1,4 +1,4 @@
-### I'm a design engineer based on NJ/NYC/PA. I'm open to remote!
+### I'm a software engineer w/ creative solver's mindset based on NJ/NYC/PA. I'm open to remote!
 
 ![Packman Mars Earth Sun](assets/images/packman-mars-earth-sun-ErikaYi-Alessia.png)
 
