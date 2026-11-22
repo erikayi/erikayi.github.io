@@ -31,6 +31,12 @@ if (navigationToggle && navigationMenu) {
     }
   });
 
+  document.addEventListener("dragstart", (event) => {
+    if (event.target instanceof Element && event.target.closest("img, video")) {
+      event.preventDefault();
+    }
+  });
+
   document.addEventListener("contextmenu", (event) => {
     event.preventDefault();
   });
