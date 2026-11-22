@@ -31,6 +31,10 @@ if (navigationToggle && navigationMenu) {
     }
   });
 
+  document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+
   document.addEventListener("keydown", (event) => {
     if (
       event.key === "Escape" &&
